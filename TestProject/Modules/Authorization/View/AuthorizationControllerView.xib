@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorizationControllerView">
+            <connections>
+                <outlet property="logInButton" destination="ZeE-kD-pBz" id="QG6-ma-atB"/>
+                <outlet property="signUpButton" destination="F53-mY-1ol" id="qmc-yn-sfR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YBh-iA-TAo">
+                    <rect key="frame" x="20" y="388" width="374" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F53-mY-1ol">
+                            <rect key="frame" x="137" y="0.0" width="100" height="40"/>
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <state key="normal" title="SignUp">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeE-kD-pBz">
+                            <rect key="frame" x="137" y="80" width="100" height="40"/>
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="TTu-Jc-3Df"/>
+                                <constraint firstAttribute="height" constant="40" id="kru-cC-11y"/>
+                            </constraints>
+                            <state key="normal" title="LogIn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="F53-mY-1ol" firstAttribute="height" secondItem="ZeE-kD-pBz" secondAttribute="height" id="Ahb-R7-lw6"/>
+                        <constraint firstItem="F53-mY-1ol" firstAttribute="width" secondItem="ZeE-kD-pBz" secondAttribute="width" id="j9f-3d-ID3"/>
+                        <constraint firstAttribute="height" constant="120" id="vNl-mC-Mjt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YBh-iA-TAo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rhu-2w-Rn1"/>
+                <constraint firstItem="YBh-iA-TAo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bk2-gR-LGn"/>
+                <constraint firstItem="YBh-iA-TAo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lhz-rd-YUG"/>
+            </constraints>
+            <point key="canvasLocation" x="12" y="133"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,22 @@
+//
+//  CharactersControllerView.swift
+//  TestProject
+//
+//  Created by Alexey Tatarchenko on 27.01.2021.
+//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+final class CharactersControllerView: BaseTableViewControllerView {
+    
+  // MARK: - Outlets
+  @IBOutlet private(set) weak var closeButton: UIButton!
+
+  // MARK: - CharactersView requirements
+
+  override var usedCells: [TableViewCell] {
+    [TableViewCell.local]
+  }
+}
